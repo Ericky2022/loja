@@ -11,24 +11,25 @@
 <body class="pagina-inicial">
     <div class="antes-menu">FRETE <p class="txt"> GRÁTIS </p> Na compra de 2 itens ou mais</div>
   <header class="cabecalho">
-    <div class="icones">
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-heart"></i>
-      <i class="fa-solid fa-shopping-cart"></i>
-    </div>
-    <img class="logo" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1000,h_300/https://luzzato.com.br/wp-content/uploads/2024/10/Sem-Titulo-1-1.png" alt="">
-    <input type="text" class="campo-busca" placeholder="Buscar...">
+      <img class="logo" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1000,h_300/https://luzzato.com.br/wp-content/uploads/2024/10/Sem-Titulo-1-1.png" alt="">
+      <input type="text" class="campo-busca" placeholder="Buscar...">
+      <div class="icones">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-shopping-cart"></i>
+      </div>
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
       &#9776;
     </button>
-    <nav>
-      <ul class="menu" id="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+</header>
+<nav>
+  <ul class="menu" id="menu">
+    <li><a href="#">Início</a></li>
+    <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
   <!-- <nav class="menu-principal">
     <ul class="menu" id="menu">
       <li><a href="#">Início</a></li>
@@ -37,15 +38,26 @@
     </ul>
   </nav> -->
 
+  <div class="carousel">
+    <div class="slides">
+      <img src="assets/img/frete1.jpeg" alt="Frete Grátis">
+      <img src="assets/img/desconto5.jpeg" alt="Desconto no Pix">
+      <img src="assets/img/entrega24h.jpeg" alt="Entrega em 24h">
+    </div>
+  
+    <button class="prev" onclick="moveSlide(-1)">❮</button>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+  </div>
+
   <section class="banner-rotativo">
     <div class="slides fade">
-      <img src="img/banner1.webp" alt="Banner 1">
+      <img src="assets/img/frete1.jpeg" alt="Banner 1">
     </div>
     <div class="slides fade">
-      <img src="img/banner2.webp" alt="Banner 2">
+      <img src="assets/img/desconto5.jpeg" alt="Banner 2">
     </div>
     <div class="slides fade">
-      <img src="img/banner3.webp" alt="Banner 3">
+      <img src="assets/img/entrega24h.jpeg" alt="Banner 3">
     </div>
   </section>
 

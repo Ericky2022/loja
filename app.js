@@ -16,3 +16,18 @@ function showSlides() {
 }
 
 document.addEventListener("DOMContentLoaded", showSlides);
+
+function moveSlide(direction) {
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+
+  slideIndex += direction;
+
+  if (slideIndex < 0) slideIndex = totalSlides - 1;
+  if (slideIndex >= totalSlides) slideIndex = 0;
+
+  slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+// Auto-play a cada 5 segundos
+setInterval(() => moveSlide(1), 5000);
