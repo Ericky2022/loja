@@ -5,22 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luzzato</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="pagina-inicial">
     <div class="antes-menu">FRETE <p class="txt"> GRÁTIS </p> Na compra de 2 itens ou mais</div>
   <header class="cabecalho">
     <img class="logo" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1000,h_300/https://luzzato.com.br/wp-content/uploads/2024/10/Sem-Titulo-1-1.png" alt="">
+    <input type="text" class="campo-busca" placeholder="Buscar...">
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
       &#9776;
     </button>
-    <nav>
-      <ul class="menu" id="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="icones">
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-shopping-cart"></i>
+    </div>
   </header>
+  <nav class="menu-principal">
+    <ul class="menu" id="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
   <section class="banner-rotativo">
     <div class="slides fade">
